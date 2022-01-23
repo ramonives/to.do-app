@@ -23,7 +23,7 @@ export function Home() {
   function handleToggleTaskDone(id: number) {
     //TODO - toggle task done if exists
     const find = tasks.find((task) => task.id === id);
-    let update = tasks.filter((task) => task.id !== id); //tasks.map((task) => ({ ...task }));
+    let update = tasks.filter((task) => task.id !== id);
 
     if (find) {
       update.push({
